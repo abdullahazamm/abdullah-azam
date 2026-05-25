@@ -407,8 +407,8 @@ img {
   position: absolute;
   /* right edge sits at ~10px inside the avatar ring's left border */
   right: calc(100% - 10px);
-  top: 36%;
-  transform: translateY(-50%);
+  top: 50%;
+  transform: translateY(-20%);
   width: clamp(100px, 14vw, 180px);
   color: var(--accent);
   opacity: 0.6;
