@@ -1,6 +1,6 @@
 // Theme toggle
 const themeToggle = document.getElementById('themeToggle');
-const savedTheme = localStorage.getItem('theme') || 'dark';
+const savedTheme = localStorage.getItem('theme') || 'light';
 document.documentElement.setAttribute('data-theme', savedTheme);
 
 themeToggle.addEventListener('click', () => {
