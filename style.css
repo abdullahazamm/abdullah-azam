@@ -1125,6 +1125,85 @@ img {
 .reveal:nth-child(6) { transition-delay: 0.40s; }
 
 /* =========================================
+   SKILLS TICKER
+   ========================================= */
+.ticker-section {
+  position: relative;
+  overflow: hidden;
+  padding: 1.5rem 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  background: var(--bg);
+}
+
+.ticker-fade {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 120px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.ticker-fade-left  { left: 0;  background: linear-gradient(to right, var(--bg), transparent); }
+.ticker-fade-right { right: 0; background: linear-gradient(to left,  var(--bg), transparent); }
+
+.ticker-inner {
+  overflow: hidden;
+  width: 100%;
+}
+
+.ticker-track {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  width: max-content;
+  animation: ticker-scroll 35s linear infinite;
+}
+
+.ticker-track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes ticker-scroll {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+.skill-pill {
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+  padding: 0.45rem 1.1rem;
+  border-radius: 999px;
+  border: 1px solid rgba(249, 115, 22, 0.35);
+  background: rgba(249, 115, 22, 0.06);
+  color: var(--accent);
+  font-size: 0.82rem;
+  font-weight: 500;
+  cursor: default;
+  transition: transform 0.25s ease, filter 0.25s ease, opacity 0.25s ease, box-shadow 0.25s ease;
+  flex-shrink: 0;
+}
+
+/* On hover: pop the hovered pill, blur the rest */
+.ticker-track:has(.skill-pill:hover) .skill-pill {
+  filter: blur(1.5px);
+  opacity: 0.45;
+  transform: scale(0.96);
+}
+
+.ticker-track .skill-pill:hover {
+  filter: blur(0) !important;
+  opacity: 1 !important;
+  transform: scale(1.12) translateY(-3px) !important;
+  box-shadow: 0 6px 20px rgba(249, 115, 22, 0.25);
+  background: rgba(249, 115, 22, 0.12);
+  border-color: var(--accent);
+  z-index: 1;
+}
+
+/* =========================================
    RESPONSIVE
    ========================================= */
 @media (max-width: 900px) {
