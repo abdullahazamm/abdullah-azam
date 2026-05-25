@@ -409,7 +409,7 @@ img {
   right: calc(100% - 10px);
   top: 36%;
   transform: translateY(-50%);
-  width: clamp(160px, 22vw, 280px);
+  width: clamp(100px, 14vw, 180px);
   color: var(--accent);
   opacity: 0.6;
   pointer-events: none;
