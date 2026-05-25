@@ -316,19 +316,6 @@ img {
   z-index: 1;
 }
 
-/* Arrow: spans the gap between name (left col) and image (center col) */
-.hero-arrow {
-  position: absolute;
-  /* sits in the gap between left column right-edge and center image left-edge */
-  left: 29%;
-  top: 40%;
-  width: clamp(90px, 13vw, 175px);
-  color: var(--accent);
-  opacity: 0.55;
-  pointer-events: none;
-  z-index: 0;
-  transform: translateY(-50%);
-}
 
 /* LEFT */
 .hero-left {
@@ -411,6 +398,22 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+  overflow: visible;
+}
+
+/* Arrow: right edge anchored to image left edge, extends leftward toward name */
+.hero-arrow {
+  position: absolute;
+  /* right edge sits at ~10px inside the avatar ring's left border */
+  right: calc(100% - 10px);
+  top: 36%;
+  transform: translateY(-50%);
+  width: clamp(160px, 22vw, 280px);
+  color: var(--accent);
+  opacity: 0.6;
+  pointer-events: none;
+  z-index: 2;
 }
 
 .hero-avatar-ring {
