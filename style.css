@@ -16,9 +16,9 @@
   --text: #e8e8e8;
   --text-muted: #888888;
   --text-dim: #555555;
-  --accent: #00d4aa;
-  --accent-dim: rgba(0, 212, 170, 0.12);
-  --accent-hover: #00b896;
+  --accent: #f97316;
+  --accent-dim: rgba(249, 115, 22, 0.12);
+  --accent-hover: #ea6c0a;
   --blue: #6366f1;
   --blue-dim: rgba(99, 102, 241, 0.12);
   --purple: #a855f7;
@@ -40,9 +40,9 @@
   --text: #1a1a1a;
   --text-muted: #5a5a5a;
   --text-dim: #9a9a9a;
-  --accent: #00a888;
-  --accent-dim: rgba(0, 168, 136, 0.1);
-  --accent-hover: #008f74;
+  --accent: #f97316;
+  --accent-dim: rgba(249, 115, 22, 0.1);
+  --accent-hover: #ea6c0a;
   --blue: #4f52d6;
   --blue-dim: rgba(79, 82, 214, 0.1);
   --purple: #9333ea;
@@ -140,15 +140,11 @@ img {
 }
 
 .nav-logo {
-  font-family: var(--mono);
-  font-size: 1.2rem;
-  font-weight: 500;
-  color: var(--text);
-  letter-spacing: -0.01em;
-}
-
-.nav-logo .dot {
+  font-family: var(--font);
+  font-size: 1.05rem;
+  font-weight: 700;
   color: var(--accent);
+  letter-spacing: -0.01em;
 }
 
 .nav-links {
@@ -161,6 +157,7 @@ img {
   font-size: 0.875rem;
   font-weight: 500;
   color: var(--text-muted);
+  text-transform: lowercase;
   transition: color var(--transition);
 }
 
@@ -632,7 +629,7 @@ img {
 .tag-accent {
   background: var(--accent-dim);
   color: var(--accent);
-  border-color: rgba(0, 212, 170, 0.2);
+  border-color: rgba(249, 115, 22, 0.2);
 }
 
 .tag-blue {
@@ -688,7 +685,7 @@ img {
   border-radius: 50%;
   background: var(--accent);
   border: 2px solid var(--bg);
-  box-shadow: 0 0 0 3px rgba(0, 212, 170, 0.2);
+  box-shadow: 0 0 0 3px rgba(249, 115, 22, 0.2);
 }
 
 .timeline-card {
@@ -947,7 +944,7 @@ img {
   border-radius: 999px;
   background: var(--accent-dim);
   color: var(--accent);
-  border: 1px solid rgba(0, 212, 170, 0.2);
+  border: 1px solid rgba(249, 115, 22, 0.2);
 }
 
 .edu-status-done {
