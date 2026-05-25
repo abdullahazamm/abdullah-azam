@@ -7,7 +7,7 @@
   <meta name="description" content="Portfolio of Abdullah Azam – Web Developer and AI Automation Specialist based in Helsinki, Finland." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -49,43 +49,70 @@
   <!-- HERO -->
   <section class="hero" id="home">
     <div class="hero-bg-grid"></div>
-    <div class="hero-content">
-      <p class="hero-eyebrow reveal"><span class="mono">~/helsinki, finland</span></p>
-      <h1 class="hero-name reveal">
-        <span class="line">Abdullah</span>
-        <span class="line accent-text">Azam</span>
-      </h1>
-      <p class="hero-title reveal">
-        Web Developer <span class="separator">&amp;</span> AI Automation Specialist
-      </p>
-      <p class="hero-desc reveal">
-        Building scalable web experiences and intelligent automation workflows that drive real business outcomes.
-        Currently interning at <span class="highlight">United Nations University (UNU-WIDER)</span>.
-      </p>
-      <div class="hero-actions reveal">
-        <a href="#projects" class="btn btn-primary">View My Work</a>
-        <a href="#contact" class="btn btn-outline">Get In Touch</a>
-      </div>
-      <div class="hero-stats reveal">
-        <div class="stat">
-          <span class="stat-num">2+</span>
-          <span class="stat-label">Years Experience</span>
+
+    <div class="hero-layout">
+
+      <!-- LEFT -->
+      <div class="hero-left reveal">
+        <p class="hero-greeting">Hi! I Am</p>
+        <h1 class="hero-name">Abdullah Azam.</h1>
+
+        <!-- dashed arrow decoration -->
+        <svg class="hero-arrow" viewBox="0 0 120 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M100 90 C80 90, 20 80, 20 40 C20 10, 55 5, 60 20" stroke="currentColor" stroke-width="2" stroke-dasharray="6 5" stroke-linecap="round" fill="none"/>
+          <path d="M55 10 L62 22 L70 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        </svg>
+
+        <div class="hero-exp">
+          <span class="exp-num">2+</span>
+          <span class="exp-text">YEARS<br>EXPERIENCE</span>
         </div>
-        <div class="stat-divider"></div>
-        <div class="stat">
-          <span class="stat-num">50+</span>
-          <span class="stat-label">Sites Launched</span>
-        </div>
-        <div class="stat-divider"></div>
-        <div class="stat">
-          <span class="stat-num">20+</span>
-          <span class="stat-label">AI Workflows Built</span>
+
+        <div class="hero-socials">
+          <a href="https://linkedin.com/in/abdullah-azamm/" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="mailto:abdullahazam1910@gmail.com" aria-label="Email">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          </a>
+          <a href="tel:+358449512373" aria-label="Phone">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.72 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.63 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          </a>
         </div>
       </div>
-    </div>
-    <div class="hero-scroll">
-      <span>Scroll</span>
-      <div class="scroll-line"></div>
+
+      <!-- CENTER - image -->
+      <div class="hero-center reveal">
+        <div class="hero-avatar-ring">
+          <div class="hero-avatar-placeholder">
+            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" fill="none">
+              <circle cx="100" cy="78" r="40" fill="currentColor" opacity="0.18"/>
+              <ellipse cx="100" cy="168" rx="62" ry="42" fill="currentColor" opacity="0.14"/>
+            </svg>
+            <span class="avatar-initials">AA</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT -->
+      <div class="hero-right reveal">
+        <p class="hero-tagline">
+          Building scalable web experiences<br>
+          and AI-powered automation that<br>
+          drives real business outcomes.
+        </p>
+
+        <div class="hero-role">
+          <span class="hero-role-cursive">Web Developer</span>
+          <span class="hero-role-regular">&amp; AI Specialist.</span>
+        </div>
+
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">View My Work</a>
+          <a href="#contact" class="btn btn-outline">Get In Touch</a>
+        </div>
+      </div>
+
     </div>
   </section>
 
